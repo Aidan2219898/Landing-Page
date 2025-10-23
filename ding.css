@@ -1,4 +1,19 @@
-img {
-  max-width: 100%;
-  height: auto; /* Maintains aspect ratio */
+
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.Icon img {
+  width: 128px;
+  height: auto;
 }
