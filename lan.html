@@ -12,7 +12,7 @@ body {
 </head>
 <body>
   <div class="desktop">
-    <h1 class="title">My Desktop</h1>
+  
     <div class="icon">
       <a href="#about"><img src="txt.png" alt="icon"><span>About.txt</span></a>
     </div>
@@ -21,6 +21,9 @@ body {
     </div>
     <div class="icon">
       <a href="#contact"><img src="txt.png" alt="icon"><span>Contacts.txt</span></a>
+    </div>
+     <div class="icon">
+      <a href="#music"><img src="music.png" alt="icon"><span>Player.exe</span></a>
     </div>
     <div id="about" class="window">
       <div class="window-bar">
@@ -48,15 +51,64 @@ body {
       </div>
       <div class="window-content">
         <p>Email: aidan.bledsoe@stu.glasgow.kyschools.us</p>
-        <p>Github:</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+   <div id="music" class="window music-player">
+      <div class="window-bar">
+        <a href="#" class="close">✕</a>
+        <span>Media Player</span>
+      </div>
+   <div class="window-content">
+    <div class="music-display">
+      <span id="album-title"> Now Playing:</span>
+    </div>
+    <input type="radio" name="album" id="album1" checked>
+    <input type="radio" name="album" id="album2">
+    <div class="album-carousel">
+      <div class="album-slide" id="slide1">
+        <img src="album1.jpg" alt="Album 1">
+        <div class="album-name">...Baby One More Time - Britney Spears</div>
+      </div>
+      <div class="album-slide" id="slide2">
+        <img src="album2.jpg" alt="Album 2">
+        <div class="album-name">Rock with you - Michael Jackson</div>
+      </div>
+    </div>
+    <div class="music-controls">
+      <label for="album1">⏮</label>
+      <label for="Look away mr richard">▶</label>
+      <label for="Boo!">⏸</label>
+      <label for="album2">⏭</label>
+    </div>
+  </div>
+</div>
+ <div id="startmenu">
+    <div class="startmenu-left">
+      <img src="user.jpeg" alt="User">
+      <span>User</span>
+    </div>
+    <div class="startmenu-right">
+      <div class="startmenu-content">
+        <h1 class="title">My Desktop</h1>
+        <hr>
+        <a href="#">My Documents</a>
+        <a href="#">Pictures</a>
+        <a href="#">Music</a>
+        <a href="#">Control Panel</a>
+      </div>
+      <div class="startmenu-bottom">
+        <a href="#">Log Off</a>
+        <a href="#">Turn Off Computer</a>
       </div>
     </div>
   </div>
   <nav class="taskbar">
-    <button class="start">Start</button>
+    <a href="#startmenu" class="start">Start</a>
     <div class="task-buttons">
       <a href="#about" class="task-btn" id="btn-about">About</a>
-      <a href="#image" class="task-btn" id="btn-image">cat</a>
+      <a href="#image" class="task-btn" id="btn-image">Cat</a>
       <a href="#contact" class="task-btn" id="btn-contact">Contact</a>
     </div>
     <div class="clock">11:30 AM</div>
