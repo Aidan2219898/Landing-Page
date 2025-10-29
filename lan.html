@@ -11,6 +11,22 @@ body {
   <link rel="stylesheet" href="ding.css">
 </head>
 <body>
+  <div id="error" class="window error-window">
+  <div class="window-bar">
+    <a href="#" class="close">✕</a>
+    <span>Error</span>
+  </div>
+  <div class="window-content error-content">
+    <div class="error-icon">✕</div>
+    <div class="error-text">
+      <p><strong>System Error</strong></p>
+      <p>An unexpected error has occurred. Please contact your system administrator.</p>
+    </div>
+    <div class="error-buttons">
+      <a href="#" class="ok-btn">OK</a>
+    </div>
+  </div>
+</div>
   <div class="desktop">
   
     <div class="icon">
@@ -25,6 +41,28 @@ body {
      <div class="icon">
       <a href="#music"><img src="music.png" alt="icon"><span>Player.exe</span></a>
     </div>
+  <div class="icon">
+  <a href="#trash"><img src="trashcan.png" alt="Trash Can"><span>Recycle Bin</span></a>
+</div>
+<div id="trash" class="window">
+  <div class="window-bar">
+    <a href="#" class="close">✕</a>
+    <span>Recycle Bin</span>
+  </div>
+  <div class="window-content trash-content">
+    <ul>
+      <li>OldProject.doc</li>
+      <li>Untitled(3).txt</li>
+      <li>temp_notes.tmp</li>
+      <li>Homework_draft(2).pdf</li>
+      <li>catphoto(1).jpeg</li>
+    </ul>
+    <div class="trash-buttons">
+      <a href="#error" class="empty-btn">Empty Recycle Bin</a>
+      <a href="#error" class="restore-btn">Restore Selected</a>
+    </div>
+  </div>
+</div>
     <div id="about" class="window">
       <div class="window-bar">
         <a href="#" class="close">✕</a>
@@ -93,17 +131,31 @@ body {
       <div class="startmenu-content">
         <h1 class="title">My Desktop</h1>
         <hr>
-        <a href="#">My Documents</a>
+        <a href="#error">My Documents</a>
         <a href="#">Pictures</a>
-        <a href="#">Music</a>
-        <a href="#">Control Panel</a>
+        <a href="#music">Music</a>
+        <a href="#error">Control Panel</a>
       </div>
       <div class="startmenu-bottom">
-        <a href="#">Log Off</a>
-        <a href="#">Turn Off Computer</a>
+        <a href="#logout">Log Off</a>
+        <a href="#turnoff">Turn Off Computer</a>
       </div>
     </div>
   </div>
+  <div id="logout" class="logout-screen">
+  <div class="logout-box">
+    <h1>Logging off...</h1>
+    <p>Please wait while Windows logs off.</p>
+    <a href="#" class="cancel-btn">Cancel</a>
+  </div>
+</div>
+<div id="turnoff" class="turnoff-screen">
+  <div class="turnoff-box">
+    <h1>Turning off...</h1>
+    <p>Please wait while Windows turns off.</p>
+    <a href="#" class="cancel-btn">Cancel</a>
+  </div>
+</div>
   <nav class="taskbar">
     <a href="#startmenu" class="start">Start</a>
     <div class="task-buttons">

@@ -1,4 +1,5 @@
 
+
 .desktop {
   position: relative;
   height: 100;
@@ -265,5 +266,198 @@ input[name="album"] {
   box-shadow: inset 2px 2px #fff, inset -2px -2px #808080;
 }
 .music-controls label:hover {
+  background: #a0a0a0;
+}
+.logout-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #003399, #000066);
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+#logout:target {
+  display: flex;
+}
+.logout-box {
+  background: rgba(0, 0, 50, 0.5);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 40px 60px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.logout-box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.logout-box p {
+  font-size: 14px;
+  color: #d0d0ff;
+  margin-bottom: 20px;
+}
+.cancel-btn {
+  display: inline-block;
+  background: #c0c0c0;
+  color: #000;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px #fff, inset -2px -2px #808080;
+  font-weight: bold;
+}
+.cancel-btn:hover {
+  background: #a0a0a0;
+}
+.turnoff-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #003399, #000066);
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+#turnoff:target {
+  display: flex;
+}
+.turnoff-box {
+  background: rgba(0, 0, 50, 0.5);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 40px 60px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.turnoff-box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.turnoff-box p {
+  font-size: 14px;
+  color: #d0d0ff;
+  margin-bottom: 20px;
+}
+.trash-content {
+  background-color: #e0e0e0;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+}
+
+.trash-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.trash-content li {
+  background: #fff;
+  border: 1px solid #808080;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trash-content li::before {
+  content: "🗎";
+  font-size: 14px;
+}
+
+.trash-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.trash-buttons a {
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 2px 2px #fff, inset -2px -2px #808080;
+}
+
+.trash-buttons a:hover {
+  background: #a0a0a0;
+}
+
+#trash:target ~ .taskbar #btn-trash {
+  background: #000080;
+  color: #fff;
+  box-shadow: inset -2px -2px #000040, inset 2px 2px #4040ff;
+}
+
+.error-window {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 320px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+  z-index: 9999;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+#error:target {
+  display: block;
+}
+
+.error-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background: #e0e0e0;
+  color: #000;
+}
+
+.error-icon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.error-text p {
+  margin: 4px 0;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 13px;
+}
+
+.error-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ok-btn {
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  padding: 4px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: inset 2px 2px #fff, inset -2px -2px #808080;
+}
+
+.ok-btn:hover {
   background: #a0a0a0;
 }
